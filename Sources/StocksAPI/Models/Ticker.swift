@@ -37,12 +37,12 @@ public struct Ticker: Codable, Identifiable, Hashable, Equatable {
 
     init(
         symbol: String,
-        quoteType: String?,
-        shortName: String?,
-        longName: String?,
-        sector: String?,
-        industry: String?,
-        exchDisp: String?
+        quoteType: String?=nil,
+        shortName: String?=nil,
+        longName: String?=nil,
+        sector: String?=nil,
+        industry: String?=nil,
+        exchDisp: String?=nil
     ) {
         self.symbol = symbol
         self.quoteType = quoteType
