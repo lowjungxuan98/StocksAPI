@@ -29,7 +29,7 @@ public struct Ticker: Codable, Identifiable, Hashable, Equatable {
     public let id = UUID()
     public let symbol: String
     public let quoteType: String?
-    public let shortName: String?
+    public let shortname: String?
     public let longName: String?
     public let sector: String?
     public let industry: String?
@@ -38,7 +38,7 @@ public struct Ticker: Codable, Identifiable, Hashable, Equatable {
     public init(
         symbol: String,
         quoteType: String? = nil,
-        shortName: String? = nil,
+        shortname: String? = nil,
         longName: String? = nil,
         sector: String? = nil,
         industry: String? = nil,
@@ -46,7 +46,7 @@ public struct Ticker: Codable, Identifiable, Hashable, Equatable {
     ) {
         self.symbol = symbol
         self.quoteType = quoteType
-        self.shortName = shortName
+        self.shortname = shortname
         self.longName = longName
         self.sector = sector
         self.industry = industry
