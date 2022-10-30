@@ -67,6 +67,7 @@ public struct Quote: Decodable, Identifiable, Hashable {
     public let trailingAnnualDividendYield: Double?
     public let epsTrailingTwelveMonths: Double?
     
+    //new
     public init(symbol: String, currency: String? = nil, marketState: String? = nil, fullExchangeName: String? = nil, displayName: String? = nil, regularMarketPrice: Double? = nil, regularMarketChange: Double? = nil, regularMarketChangePercent: Double? = nil, regularMarketChangePreviousClose: Double? = nil, regularMarketTime: Date? = nil, postMarketPrice: Double? = nil, postMarketChange: Double? = nil, regularMarketOpen: Double? = nil, regularMarketDayHigh: Double? = nil, regularMarketDayLow: Double? = nil, regularMarketVolume: Double? = nil, trailingPE: Double? = nil, marketCap: Double? = nil, fiftyTwoWeekLow: Double? = nil, fiftyTwoWeekHigh: Double? = nil, averageDailyVolume3Month: Double? = nil, trailingAnnualDividendYield: Double? = nil, epsTrailingTwelveMonths: Double? = nil) {
         self.symbol = symbol
         self.currency = currency
