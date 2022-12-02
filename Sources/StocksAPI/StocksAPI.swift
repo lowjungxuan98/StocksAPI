@@ -20,8 +20,8 @@ public struct StocksAPI {
     private let baseURL = "https://query1.finance.yahoo.com"
     
     public init() {}
-    public func fetchChartData(symbol: String, range: ChartRange) async throws -> ChartData? {
-        guard var urlComponents = URLComponents(string: "\(baseURL)/v8/finance/chart/\(symbol)") else {
+    public func fetchChartData(tickerSymbol: String, range: ChartRange) async throws -> ChartData? {
+        guard var urlComponents = URLComponents(string: "\(baseURL)/v8/finance/chart/\(tickerSymbol)") else {
             throw APIError.invalidURL
         }
         
